@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: #737373;
+}
+h2 {
+  font-size: xx-large;
+}
+header {
+  display: flex;
+  padding: 1.5em 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+.chirpLogo {
+  color: #00acee;
+  font-size: x-large;
+}
+.mobileBanner {
+  /* padding: 0 2em; */
+}
+.mobileBanner img {
+  width: 100%;
+}
+.heroSection {
+  padding: 0 2em;
+  background-color: #fffbd146;
+  padding: 2em;
+}
+.heroSection > h2 {
+  font-size: xx-large;
+}
+.blueText {
+  color: #1f7898;
+  font-weight: 800;
+}
+.buttonLink > button,
+.planInfo > button {
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+  font-weight: 800;
+  font-size: large;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7em 0;
+}
+.heroSection > img {
+  margin-right: 20px;
+}
+.learnMore {
+  text-align: center;
+  display: block;
+  margin-top: 1em;
+  text-decoration: none;
+  font-weight: 700;
+  color: #1f7898;
+}
+
+.features {
+  padding: 0 2em;
+}
+.featureList {
+  border: #c9c9c9 solid 1px;
+  border-radius: 7px;
+  padding: 0.9em;
+  margin: 0.8em 0;
+}
+.testimonials {
+  background-color: #d7f5f5;
+  padding: 2em;
+}
+.reviewContainerHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.reviewContainerHeader > span {
+  display: flex;
+  align-items: center;
+}
+.reviewContainerHeader > span > h4 {
+  margin-bottom: 3em;
+}
+.userreviewinfo {
+  background-color: white;
+  border-radius: 7px;
+  margin: 1.3em 0;
+  padding: 0 1em;
+}
+.likeImg {
+  margin-right: 7px;
+}
+.planPrices {
+  padding: 2em;
+  text-align: center;
+}
+.planInfo {
+  border: #ffad23 solid 1px;
+  border-radius: 7px;
+  padding: 2em;
+  text-align: left;
+  background-color: #f4ede1;
+}
+.H1dollar {
+  font-size: xxx-large;
+  font-weight: 800;
+}
+.planInfo > ul > li {
+  list-style-type: none;
+  display: flex;
+  margin-left: -30px;
+}
+.planInfo > ul > li > img {
+  margin-right: 10px;
+}
+
+footer {
+  padding: 2em;
+  background-color: #d7f5f5;
+}
+
+  display: flex;
+  justify-content: start;
+}
+.footerLinks > a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1em;
+}
+.tabletBanner {
+  display: none;
+}
+
+.faqSection {
+  padding: 0 2em;
+}
+.faqSection h1 {
+  display: block;
+  text-align: center;
+  margin: 2em 0;
+}
+.desktopnav {
+    display: none;
+}
+@media only screen and (min-width: 650px) {
+  .mobilenav {
+    display: none;
+  }
+  .desktopnav {
+    display: flex;
+    align-items: center;
+  }
+  .desktopnav > a {
+    text-decoration: none;
+    color: #737373;
+    margin: 1em;
+  }
+  .desktopnav button img {
+    margin-right: 5px;
+  }
+  .signIn {
+    background-color: #1da1f2;
+    border: none;
+    color: white;
+    font-weight: 800;
+    font-size: large;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.7em;
+  }
+  .mobileBanner {
+    display: none;
+  }
+  .tabletBanner {
+    display: block;
+  }
+  .tabletBanner > img {
+    width: 100%;
+  }
+  .planInfo {
+    margin: 0 4em;
+  }
+  .buttonLink {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+  }
+  .buttonLink button {
+    width: fit-content;
+    flex: 1;
+  }
+  .testimonials > div {
+    display: flex;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+  }
+  .userreviewinfo {
+    margin-right: 2em;
+    width: 400px;
+    flex: none;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer > .footerLinks {
+    flex: 0.6;
+    justify-content: end;
+    align-items: center;
+  }
+  .footerLinks > img {
+    width: 40px;
+  }
+  .faqSection {
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  header {
+    padding: 0 6em;
+  }
+  .heroSection {
+    padding: 0 6em;
+  }
+  .mobileBanner {
+    display: block;
+  }
+  .tabletBanner {
+    display: none;
+  }
+  .flexBanner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .mobileBanner {
+    flex: 0.4;
+  }
+  article {
+    flex: 0.5;
+  }
+  .buttonLink {
+    width: 90%;
+  }
+  .features {
+    padding: 0 6em;
+  }
+  .features > div {
+    display: grid;
+    justify-content: space-around;
+    gap: 20px;
+    grid-template-columns: auto auto;
+  }
+  .featureList {
+    flex-wrap: wrap;
+
+    /* min-width: 300px; */
+  }
+  .testimonials {
+    padding: 0 6em;
+  }
+  .testimonials > div {
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+  }
+  .userreviewinfo {
+    min-width: 185px;
+    width: 185px;
+  }
+  .planInfo {
+    margin: 0 12em;
+  }
+  footer {
+    padding: 0 6em;
+  }
+  .faqSection {
+    padding: 0 6em;
+  }
+}
